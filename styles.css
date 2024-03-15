@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @font-face {
     font-family:"popCulture";
     src: url(popculture/POP-CULTURE.otf);
+}
+htmL{
+    scroll-behavior:smooth;
 }
 *{
     padding:0;
@@ -100,11 +102,11 @@ main{
     position:absolute;
     height:100%;
     width:100%;
-    filter:brightness(120%) drop-shadow(0px 0px 40px rgb(26, 0, 173) );
+    filter:brightness(120%) drop-shadow(0px 0px 50px rgba(26, 0, 173, 0.411) );
     background: url(https://input-assets.blend-api.com/dRfqGW7X/FGgsH4UC0H8mbCOLd9GnE-bg-removed.png);
     background-repeat:no-repeat;
-    background-position:bottom -100px center, bottom -100px center;
-    background-size:620px auto, 900px auto;
+    background-position:bottom -100px center;
+    background-size:620px auto;
 }
 .introTitle{
     display:flex;
@@ -125,7 +127,7 @@ main{
     position:absolute;
 }
 
-.firstContent{
+#firstContent{
     grid-area:3/1/4/2;
     background-color:rgb(26, 0, 173);
     height:200vh;
@@ -133,7 +135,7 @@ main{
 .spanLetter{
     font-size:15rem;
     color:white;
-    text-shadow:0px 0px 1px white;
+    text-shadow:0px 0px 4px white;
     font-weight:900;
 }
 .introTitle.rightText{
@@ -157,12 +159,13 @@ main{
     gap:20px;
 }
 .introPageContent h2{
-    color:white;
-    text-shadow:0px 0px 5px white;
+    color:white;text-shadow:0px 0px 1px white;
     font-size:3rem;
 }
 .introPageContent a{
+    text-decoration:none;
     color:white;
+    cursor: pointer;
     background-color:rgb(26, 0, 173);
     font-size:min(1rem, 12vw);
     padding:1%;
@@ -171,4 +174,7 @@ main{
     align-items:center;
     justify-content:center;
     border-radius:0px 0px 50% 0px;
+}
+.introPageContent a:hover{
+    background-color:rgb(34, 0, 230)
 }
